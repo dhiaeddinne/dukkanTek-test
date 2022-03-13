@@ -8,11 +8,11 @@ class SplashScreenViewModel extends BaseViewModel {
   NavigationService navigationService = NavigationService();
   
   void init({required BuildContext context}){
-    Future.delayed(const Duration(seconds: 2)).then((value) => navigateToHomeScreen(context: context));
+    Future.delayed(const Duration(seconds: 2)).then((value) => navigateToLoginScreen(context: context));
   }
 
 
-  void navigateToHomeScreen({required BuildContext context}) {
+  void navigateToLoginScreen({required BuildContext context}) {
     navigationService.changeScreenReplacement(context, const LoginScreenView());
   }
 }

@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 const String splashScreenViewRoute = "/";
 const String homeScreenRoute = "/home";
 const String loginScreenRoute = "/login";
-const String registerScreeRoute = "/sign_up";
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {

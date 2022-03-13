@@ -2,11 +2,11 @@ class ArMessages {
   static Map<String, Map<String, String>> messages = {
     "auth": {
       "login": "تسجيل دخول",
-      "login_to_your_account": "Log In To Account",
-      "email": "email",
-      "password": "password",
-      "forget_password":"Forgot Password?",
-      "login_with_google":"Log In With Google",
+      "login_to_your_account": "تسجيل الدخول إلى الحساب",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة السر",
+      "forget_password":"هل نسيت كلمة السر؟",
+      "login_with_google":"تسجيل الدخول عبر Google",
     },
     "message":{
       "login_error": "الرجاء التثبت من البريد إلكتروني وكلمة مرور",
@@ -20,10 +20,6 @@ class ArMessages {
       "welcome_back": "مرحبا",
       "its_time_to_shop": "حان وقت التسوق!",
       "buy_online": "اشتري أروع المنتجات"
-    },
-    "Button": {
-      "save": "Save",
-      "upload": "upload"
     },
   };
 }

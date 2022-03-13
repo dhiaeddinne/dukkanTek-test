@@ -1,5 +1,6 @@
 import 'package:dukkan_tekk_test/app/constants/app_config.dart';
 import 'package:dukkan_tekk_test/app/services/navigation_services.dart';
+import 'package:dukkan_tekk_test/ui/screens/login/login_screen_view.dart';
 import 'package:dukkan_tekk_test/ui/screens/spash_screen/splash_screen_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -18,31 +19,23 @@ class HomeScreenViewModel extends BaseViewModel {
 
   String get userEmail => _userEmail;
 
-  late final String _userPhoto;
-
-  String get userPhoto => _userPhoto;
-
   void init({required BuildContext context}) async {
     await getUserDataFromLocal();
   }
 
+  /// get user Data from local storage
   getUserDataFromLocal() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     _userName = prefs.getString(userNameKey)!;
     _userEmail = prefs.getString(userEmailKey)!;
-    _userPhoto = prefs.getString(userPhotoKey)!;
     notifyListeners();
   }
 
-  void navigateToHomeScreen({required BuildContext context}) {
-    navigationService.changeScreenReplacement(
-        context, const SplashScreenView());
-  }
-
+  ///Logout
   logout({required BuildContext context}) async {
     GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
     await _googleSignIn.signOut();
     navigationService.pushAndRemove(
-        context, const SplashScreenView());
+        context, const LoginScreenView());
   }
 }

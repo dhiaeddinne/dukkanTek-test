@@ -192,6 +192,8 @@ class _LoginScreenViewState extends State<LoginScreenView> {
       onPressed: () {
         if(loginViewModel
             .keyForm.currentState!.validate()){
+          loginViewModel.passwordFocusNode.unfocus();
+          loginViewModel.emailFocusNode.unfocus();
           loginViewModel.btnController.start();
           loginViewModel.signIn(
             context: context,
