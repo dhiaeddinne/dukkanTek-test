@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274600108146",
+    "project_id": "dukkan-tekk-test",
+    "storage_bucket": "dukkan-tekk-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274600108146:android:04c07e6cce3ea859b422eb",
+        "android_client_info": {
+          "package_name": "com.example.dukkan_tekk_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274600108146-ddip2gp18eur51rv1b58q4neg8vb0pjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYOV-lT-xXnm3qFttbQLx_7yhmEjJkPhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274600108146-ddip2gp18eur51rv1b58q4neg8vb0pjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
